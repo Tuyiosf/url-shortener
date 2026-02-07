@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>ShortLink</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1 id="line">ShortLink</h1>
+      <form id="url-form">
+        <div>
+          <label for="url">Enter URL:</label>
+          <input type="url" id="url" name="url" required />
+        </div>
+        <div>
+          <label for="Shortcode">Custom Your URL:</label>
+          <input type="text" id="Shortcode" name="Shortcode" />
+        </div>
+        <button id="shorten-btn" type="submit">Chop</button>
+      </form>
+      <h2>Shortened URL:</h2>
+      <ul id="shortened-urls">
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+    <div id="toast"></div>
+    ;
+    <script>
+      function showToast(message, type = "success") {
+        const toast = document.getElementById("toast");
+
+        toast.textContent = message;
+        toast.className = ""; // reset
+        toast.classList.add("show");
+
+        if (type === "error") {
+          toast.classList.add("error");
+        }
+
+        setTimeout(() => {
+          toast.classList.remove("show", "error");
+        }, 2500);
+      }
+
+      const fetchShortenedUrls = async () => {
+        const response = await fetch("/links");
+
+        if (!response.ok) {
+          console.log("GET /links failed:", response.status);
+          return;
+        }
+
+        const links = await response.json();
+        console.log("links", links);
+
+        const list = document.getElementById("shortened-urls");
+        list.innerHTML = "";
+
+        for (const [shortcode, url] of Object.entries(links)) {
+          const li = document.createElement("li");
+
+          li.innerHTML = `<a href="${window.location.origin}/${shortcode}" target="_blank">${window.location.origin}/${shortcode}</a>`;
+          list.appendChild(li);
+        }
+      };
+
+      document
+        .getElementById("url-form")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          const formdata = new FormData(e.target);
+          const url = formdata.get("url");
+          const shortcode = formdata.get("Shortcode")?.trim();
+
+          try {
+            const response = await fetch("/shorten", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ url, shortcode }),
+            });
+
+            const data = await response.json().catch(() => ({}));
+
+            if (!response.ok) {
+              showToast(data.error || "Something went wrong", "error");
+              return;
+            }
+
+            showToast("URL shortened successfully");
+            e.target.reset();
+            fetchShortenedUrls();
+          } catch (error) {
+            console.log(error);
+            showToast("Network error", "error");
+          }
+        });
+
+      fetchShortenedUrls();
+    </script>
+  </body>
+</html>
